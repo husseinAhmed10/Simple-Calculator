@@ -1,0 +1,101 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 28, 2023
+ *      Author: T.S
+ */
+
+#include "lcd.h"
+#include <util/delay.h> /* To use the delay functions */
+#include "keypad.h"
+
+uint8 simple_calc(uint8 par1, uint8 par2, uint8 oper) {
+
+	switch (oper) {
+	case '+':
+		return (par1 + par2);
+
+	case '-':
+		return (par1 - par2);
+
+	case '*':
+		return (par1 * par2);
+
+	case '%':
+		if (par2 == 0)
+			return 0;
+		else
+			return (par1 / par2);
+
+	default:
+		return par1;
+	}
+
+}
+
+void calc_init() {
+
+	LCD_clearScreen();
+	LCD_displayString("calculator");
+	LCD_displayStringRowColumn(1, 0, "keypad 4x4");
+
+	LCD_moveCursor(3, 0);
+
+}
+
+int main(void) {
+
+	LCD_init();
+
+	calc_init();
+
+	uint8 num1 = 0, num2 = 0, oper, res = 0;
+
+	uint8 first_num = 1, second_num = 0;
+
+	uint8 num, oldnum;
+	while (1) {
+
+		num = KEYPAD_getPressedKey();
+		_delay_ms(500);
+		if ((num <= 9) && (num >= 0)) {
+
+			if (first_num == 1) {
+				/*we keep taking the entered numbers and saving it into num1*/
+				num1 = num1 * 10 + (num - '0');
+				LCD_IntegerToString(num);
+			}
+			//if the flag == 2 we are now entering the 2nd number
+			else if (second_num == 1) {
+				/*we convert that number into int*/
+				num2 = num2 * 10 + (num - '0');
+				LCD_IntegerToString(num);
+			}
+
+
+		} else if (num == 13) {
+			calc_init();
+			first_num = 1;
+		}
+
+		else {
+			LCD_displayCharacter(num); /* display the pressed keypad switch */
+			oper = num;
+
+
+			if (oper == '=') {
+				res = simple_calc(num1, num2, oper);
+				LCD_intgerToString(res); /* display the pressed keypad switch */
+
+				first_num = 0;
+				second_num = 0;
+			}
+
+		}
+
+		oldnum = num;
+
+	}
+
+	return 0;
+}

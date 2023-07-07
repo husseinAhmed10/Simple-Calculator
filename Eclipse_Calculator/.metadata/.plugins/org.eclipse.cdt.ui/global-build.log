@@ -1,0 +1,1084 @@
+14:54:36 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../Keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Keypad.d" -MT"Keypad.o" -c -o "Keypad.o" "../Keypad.c"
+In file included from ../Keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_intgerToString':
+../LCD.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11732 bytes (35.8% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:58:34 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.c: In function 'LCD_intgerToString':
+../LCD.c:209: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11732 bytes (35.8% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:32 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11762 bytes (35.9% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:07:42 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11522 bytes (35.2% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:08 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11522 bytes (35.2% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:03 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11526 bytes (35.2% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:25 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11538 bytes (35.2% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:40:32 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:34: undefined reference to `LCD_IntegerToString'
+../main.c:34: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:41:31 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:34: undefined reference to `LCD_IntegerToString'
+../main.c:34: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:41:55 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:58: error: 'num' undeclared (first use in this function)
+../main.c:58: error: (Each undeclared identifier is reported only once
+../main.c:58: error: for each function it appears in.)
+../main.c:65: warning: implicit declaration of function 'LCD_IntegerToString'
+../main.c:123: error: 'oldnum' undeclared (first use in this function)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:42:09 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+../main.c:124: error: 'oldnum' undeclared (first use in this function)
+../main.c:124: error: (Each undeclared identifier is reported only once
+../main.c:124: error: for each function it appears in.)
+make: *** [main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:42:20 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:34: undefined reference to `LCD_IntegerToString'
+../main.c:34: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:43:08 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:34: undefined reference to `LCD_IntegerToString'
+../main.c:34: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:13 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:66: warning: implicit declaration of function 'LCD_IntegerToString'
+../main.c:52: warning: unused variable 'res'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:34: undefined reference to `LCD_IntegerToString'
+../main.c:34: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:40 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:65: warning: implicit declaration of function 'LCD_IntegerToString'
+../main.c:51: warning: unused variable 'res'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+./main.o: In function `simple_calc':
+../main.c:33: undefined reference to `LCD_IntegerToString'
+../main.c:33: undefined reference to `LCD_IntegerToString'
+make: *** [Simple_Calculator.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:47:37 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:51: warning: unused variable 'res'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11702 bytes (35.7% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:47:47 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:51: warning: unused variable 'res'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11698 bytes (35.7% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:12:27 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11834 bytes (36.1% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:15:23 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11848 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:19:01 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11848 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:19:43 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11854 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:21:29 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11870 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:22:33 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11870 bytes (36.2% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:23:25 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12108 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:24:17 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12110 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:29:28 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12124 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:32:45 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12166 bytes (37.1% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:33:31 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12168 bytes (37.1% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:34:15 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:60: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12110 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:37:21 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:60: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12120 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:40:03 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:60: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12118 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:50:07 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:61: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12122 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:53:32 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:61: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12138 bytes (37.0% Full)
+(.text + .data + .bootloader)
+
+Data:         37 bytes (1.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:00:38 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:61: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12146 bytes (37.1% Full)
+(.text + .data + .bootloader)
+
+Data:         45 bytes (2.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:01:46 **** Incremental Build of configuration Debug for project Simple_Calculator ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:61: warning: unused variable 'initial'
+Finished building: ../main.c
+ 
+Building target: Simple_Calculator.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Simple_Calculator.map -mmcu=atmega32 -o "Simple_Calculator.elf"  ./Keypad.o ./LCD.o ./gpio.o ./main.o   
+Finished building target: Simple_Calculator.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Simple_Calculator.elf  >"Simple_Calculator.lss"
+Finished building: Simple_Calculator.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Calculator.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12178 bytes (37.2% Full)
+(.text + .data + .bootloader)
+
+Data:         63 bytes (3.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
