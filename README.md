@@ -7,3 +7,7 @@ AVR Simple Calculator is a simple calculator program for AVR microcontrollers wr
 -Use the keypad to input numbers and operations.
 -The LCD display will show the current input or result.
 -Press the "equals" button to calculate the result.
+
+**Demo**
+![Calculator](https://github.com/husseinAhmed10/Simple-Calculator/Calculator.gif
+
