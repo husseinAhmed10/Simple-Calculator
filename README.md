@@ -9,5 +9,4 @@ AVR Simple Calculator is a simple calculator program for AVR microcontrollers wr
 -Press the "equals" button to calculate the result.
 
 **Demo**
-![Calculator](https://github.com/husseinAhmed10/Simple-Calculator/Calculator.gif
-
+![](https://github.com/husseinAhmed10/Simple-Calculator/blob/main/Calculator.gif)
